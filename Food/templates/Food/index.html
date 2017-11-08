@@ -1,0 +1,29 @@
+<h1>Food Court</h1>
+<a href="{">Add Food Item</a>
+<table border="1px">
+	<tr>
+		<th>
+			Movie Name
+		</th>
+		<th>
+			Ticket
+		</th>
+		<th>
+			Genre
+		</th>
+	</tr>
+	{%for i in food_items%}
+		<tr>
+			<td>
+				{{i.movie_name}}
+			</td>
+			<td>
+				{{i.ticket_price}}
+			</td>
+			<td>
+				{{i.gener}}
+			</td>
+			
+		</tr>
+	{%endfor%}	
+</table>
